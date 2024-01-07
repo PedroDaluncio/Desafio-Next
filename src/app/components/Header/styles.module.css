@@ -1,0 +1,44 @@
+.Cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100vw;
+    height: 6vh;
+    padding: 5vh 2vw;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img{
+    width: 8vw;
+    height: 5vh;
+}
+
+.logo span{
+    font-size: 15px;
+}
+
+.letraLaranja{
+    color: rgba(250, 132, 0, 1);
+}
+
+.Menu{
+   word-spacing: 9px;
+   font-size: 13px;
+}
+
+.botaoCarreira{
+    background-color: rgba(250, 132, 0, 1);
+    display: inline;
+    padding: 5px 10px;
+    color:rgba(2, 48, 71, 1);
+}
+
+.botaoCarreira:hover{
+    background-color: rgba(209, 111, 0, 1);
+}
