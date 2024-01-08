@@ -10,9 +10,9 @@ const fontGame = Press_Start_2P({
 
 export default function Header(){
     return(
-        <header className={Styles.Cabecalho}>
+      <header className={Styles.Cabecalho}>
         <div className={Styles.logo}>
-          <img src="Icon.svg" alt="Logo da página, sendo uma abóbora"></img>
+          <img src="Icon.png" alt="Logo da página, sendo uma abóbora"></img>
           <span className={fontGame.className}>J<span className={Styles.letraLaranja}>
             O</span>J<span className={Styles.letraLaranja}>O</span>S</span>
         </div>
