@@ -9,6 +9,11 @@
     padding: 5vh 0 5vh 0;
 }
 
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
 .logo{
     display: flex;
     flex-direction: row;
@@ -16,8 +21,8 @@
 }
 
 .logo img{
-    width: 3vw;
-    height: 5vh;
+    width: 40px;
+    height: 40px;
 }
 
 .logo span{
@@ -38,6 +43,7 @@
     display: inline;
     padding: 5px 10px;
     color:rgba(2, 48, 71, 1);
+    margin-left: 20px;
 }
 
 .botaoCarreira:hover{
@@ -46,7 +52,7 @@
 
 @media(min-width: 400px) and (max-width: 599px){
     .Menu{
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -55,7 +61,7 @@
         font-size: 22px;
     }
     .logo span{
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 

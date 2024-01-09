@@ -12,8 +12,6 @@
     margin-left: 50px;
 }
 
-
-
 .Texto, .TextoImagem,.fotoLugar{
     width: 95vw;
     max-width: 95vw;
@@ -67,7 +65,7 @@
         font-size: 20px;
         line-height: 32px;
         max-width: 692px;
-        width: 500px;
+        width: 692px;
     }
     .TextoImagem{
         width: 90vw;

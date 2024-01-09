@@ -11,7 +11,7 @@ const fontGame = Press_Start_2P({
 
 export default function SobreNos(){
     return(
-        <section className={Styles.sobreNos}>
+        <section className={Styles.sobreNos} id='Sobre'>
           <span className={fontGame.className}>Sobre Nós</span>
           <div className={Styles.TextoImagem}>
             <div className={Styles.Texto}>

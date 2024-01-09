@@ -10,7 +10,7 @@ const fontGame = Press_Start_2P({
 
 export default function Carreira(){
     return(
-        <section className={Styles.Carreira}>
+        <section className={Styles.Carreira} id='Carreira'>
           <p className={`${fontGame.className} ${Styles.tituloCarreira}`}>Carreira</p>
           <section className={Styles.Vagas}>
             <div className={Styles.caixaVagas}>
