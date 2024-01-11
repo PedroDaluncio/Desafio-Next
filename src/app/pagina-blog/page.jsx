@@ -5,7 +5,7 @@ import {Press_Start_2P} from 'next/font/google'
 import Header from "@/app/components/Header/page"
 import Footer from "@/app/components/footer/page"
 
-import {getStaticProps} from '../../../api/get_data'
+import {GET} from '../api/route'
 
 const fontGame = Press_Start_2P({
     weight: '400',
@@ -13,18 +13,13 @@ const fontGame = Press_Start_2P({
     display: 'swap',
   })
 
-const dados = getStaticProps()
-
-
-
 export default function Blog(){
     return(
         <>
             <Header />
-            <main>
-                <h1 className={`${fontGame.className} ${Styles.blogTitulo}`}>BLOG</h1>
-                <p>{dados.toString()}</p>
-            </main>
+            <h1 className={`${fontGame.className} ${Styles.blogTitulo}`}>BLOG</h1>
+            {GET()}
+            <Footer />
         </>
     )
 }

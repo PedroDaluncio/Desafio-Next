@@ -10,7 +10,17 @@ html,body{
     overflow-x: hidden;
 }
 
-@media(min-width:700px){
+@media(min-width:700px) and (max-width: 1000px){
+    html,body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 30px;
+    }
+}
+
+@media(min-width:1001px){
     html,body{
         display: flex;
         flex-direction: column;

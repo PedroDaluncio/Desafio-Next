@@ -18,11 +18,11 @@ export default function Header(){
             O</span>J<span className={Styles.letraLaranja}>O</span>S</span>
         </div>
         <span className={Styles.Menu}>
-          <Link href={'/#Sobre'} className={Styles.link}> Jogos </Link>
-          <Link href={'/#Sobre'} className={Styles.link}> Sobre </Link>
-        Blog
+          <Link href={'/#Sobre'} className={Styles.link}>Jogos </Link>
+          <Link href={'/#Sobre'} className={Styles.link}>Sobre </Link>
+          <Link href={'/pagina-blog'} className={Styles.link}>Blog </Link>
           <Link href={'/#Carreira'} className={Styles.link}>
-            <div className={Styles.botaoCarreira}>Carreira</div></Link>
+          <div className={Styles.botaoCarreira}>Carreira</div></Link>
         </span>
       </header>
     )
