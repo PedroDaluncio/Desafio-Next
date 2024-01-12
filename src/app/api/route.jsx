@@ -1,6 +1,7 @@
 import { createClient } from "next-sanity";
 
 import Styles from './styles.module.css'
+import Link from "next/link";
 
 const client = createClient({
     projectId: '5ao0nnb7',
@@ -21,14 +22,16 @@ export async function GET(){
         const imagePostsUrl = 'https://cdn.sanity.io/images/5ao0nnb7/production/2ab6340d6371c5e5ee5e839139e908f68a7d7a07-390x220.png'
         return(
                 <main className={Styles.mainContent}>
-                    <section className={Styles.mainPost}>
-                        <img src={imageUrl} alt="foto de um computador anos 90 e um gameboy" className={Styles.imagem}></img>
-                        <div className={Styles.textPart}>
-                            <h2 className={Styles.title}>{posts.title}</h2>
-                            <p className={Styles.author}>{posts.author}</p>
-                            <p className={Styles.text}>{posts.text}</p>
-                        </div>
-                    </section>
+                    <Link href={'/pagina-blog-post'} className={Styles.link}>
+                        <section className={Styles.mainPost}>
+                            <img src={imageUrl} alt="foto de um computador anos 90 e um gameboy" className={Styles.imagem}></img>
+                            <div className={Styles.textPart}>
+                                <h2 className={Styles.title}>{posts.title}</h2>
+                                <p className={Styles.author}>{posts.author}</p>
+                                <p className={Styles.text}>{posts.text}</p>
+                            </div>
+                        </section>
+                    </Link>
                     <section className={Styles.postsPreview}>
                         <div className={Styles.otherPosts}>
                             <img src={imagePostsUrl} alt="tela de uma televisão com videogame" className={Styles.imagemPost}></img>
