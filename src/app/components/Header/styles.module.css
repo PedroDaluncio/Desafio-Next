@@ -12,6 +12,7 @@
 .link{
     text-decoration: none;
     color: inherit;
+    width: 10px;
 }
 
 .logo{
@@ -34,7 +35,7 @@
 }
 
 .Menu{
-   word-spacing: 9px;
+   word-spacing: 5px;
    font-size: 13px;
 }
 
@@ -43,7 +44,6 @@
     display: inline;
     padding: 5px 10px;
     color:rgba(2, 48, 71, 1);
-    margin-left: 20px;
 }
 
 .botaoCarreira:hover{
@@ -52,13 +52,14 @@
 
 @media(min-width: 400px) and (max-width: 599px){
     .Menu{
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
 @media(min-width: 600px) and (max-width:1100px){
     .Menu{
         font-size: 22px;
+        word-spacing: 25px;
     }
     .logo span{
         font-size: 20px;
@@ -71,7 +72,7 @@
     }
     .Menu{
         font-size: 25px;
-        word-spacing: 45px;
+        word-spacing: 30px;
     }
     .logo span{
         font-size: 25px;

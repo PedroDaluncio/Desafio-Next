@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Styles from './styles.module.css'
 
 import {Press_Start_2P} from 'next/font/google'
@@ -13,11 +14,13 @@ export default function Carreira(){
         <section className={Styles.Carreira} id='Carreira'>
           <p className={`${fontGame.className} ${Styles.tituloCarreira}`}>Carreira</p>
           <section className={Styles.Vagas}>
-            <div className={Styles.caixaVagas}>
-                <p>Desenvolvedor C++ Júnior</p>
-                <span>DEV</span>
-                <span>Remoto</span>
-            </div>
+            <Link href={'./pagina-formulario'} className={Styles.link}>
+                <div className={Styles.caixaVagas}>
+                    <p>Desenvolvedor C++ Júnior</p>
+                    <span>DEV</span>
+                    <span>Remoto</span>
+                </div>
+            </Link>
             <div className={Styles.caixaVagas}>
                 <p>Desenvolvedor C++ Pleno</p>
                 <span>DEV</span>

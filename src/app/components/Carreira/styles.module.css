@@ -17,6 +17,11 @@
     margin-bottom: 30px;
 }
 
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
 .caixaVagas span{
     color: rgba(223, 223, 228, 1);
     border: 1px solid rgba(223, 223, 228, 1);
