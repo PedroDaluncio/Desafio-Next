@@ -5,7 +5,7 @@ import {Press_Start_2P} from 'next/font/google'
 import Header from "@/app/components/Header/page"
 import Footer from "@/app/components/footer/page"
 
-import {GET} from '../api/route'
+import {GET} from '../api/page'
 
 const fontGame = Press_Start_2P({
     weight: '400',

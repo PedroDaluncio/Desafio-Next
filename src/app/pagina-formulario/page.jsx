@@ -1,8 +1,11 @@
+'use client'
+
 import Styles from './styles.module.css'
 import {Press_Start_2P} from 'next/font/google'
 
 import Header from "@/app/components/Header/page"
 import Footer from "@/app/components/footer/page"
+import { useRouter } from 'next/navigation'
 
 const fontGame = Press_Start_2P({
     weight: '400',
@@ -11,12 +14,18 @@ const fontGame = Press_Start_2P({
   })
 
 export default function Forms(){
+    const router = useRouter()
+
+    const handleSubmit = (event) =>{
+        event.preventDefault()
+        router.replace('/sendSuccess')
+    }
     return(
         <>
             <Header />
             <main>
                 <h1 className={`${fontGame.className} ${Styles.title}`}>Formulário de Vaga</h1>
-                <form className={Styles.forms}>
+                <form className={Styles.forms} onSubmit={ handleSubmit } >
                     <label htmlFor='insertName'> <p>Nome:</p>
                         <input type='text' name='insertName' id='insertName' className={Styles.input} required></input>
                     </label>
